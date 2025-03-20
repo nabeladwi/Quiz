@@ -83,6 +83,36 @@
             padding: 15px 0;
             margin-top: 30px;
         }
+         /* Tambahan untuk responsif di mobile (≤ 768px) */
+         @media (max-width: 768px) {
+            .navbar {
+                padding: 8px 10px;
+            }
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+            .menu-btn {
+                padding: 8px 12px;
+                font-size: 1rem;
+            }
+            .sidebar {
+                width: 250px;
+                left: -250px;
+            }
+            .sidebar.active {
+                left: 0;
+            }
+            .content {
+                padding: 20px;
+            }
+            .card {
+                padding: 15px;
+            }
+            footer {
+                padding: 10px 0;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 
 </head>
@@ -102,10 +132,10 @@
     <sidebar>
         <div class="sidebar" id="sidebar">
             <button class="close-btn" onclick="toggleSidebar()">×</button>
-            <h3>Informasi Seminar</h3>
+            <h3>Informasi Seminar Teknologi Nasional</h3>
             <p><strong>Tanggal:</strong> 22 Maret 2025</p>
             <p><strong>Waktu:</strong> 09.00 - 17.00 WIB</p>
-            <p><strong>Lokasi:</strong> Gedung Serba Guna, Madiun</p>
+            <p><strong>Lokasi:</strong> Gedung B PNM, Madiun</p>
             <p><strong>Pembicara:</strong></p>
             <ul>
                 <li>Nabela</li>
