@@ -220,13 +220,13 @@
         // Untuk validasi tidak boleh dibawah atau kurang 2006 di tgl lahir
         document.getElementById("tanggal").addEventListener("change", function() {
         let inputDate = new Date(this.value);
-        let minDate = new Date("2006-01-01");
-        
-        if (inputDate < minDate) {
-            alert("Tanggal lahir tidak boleh kurang dari tahun 2006.");
+        let maxDate = new Date("2006-01-01");
+
+        if (inputDate > maxDate) {
+            alert("Tanggal lahir tidak boleh lebih dari tahun 2006.");
             this.value = "";
         }
-    });
+});
     </script>
 </body>
 </html>
